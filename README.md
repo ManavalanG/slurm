@@ -12,7 +12,7 @@ To deploy this profile, run
 
 	mkdir -p ~/.config/snakemake
 	cd ~/.config/snakemake
-	cookiecutter https://github.com/Snakemake-Profiles/slurm.git
+	cookiecutter https://github.com/ManavalanG/slurm.git
 
 Then, you can run Snakemake with
 
@@ -54,7 +54,7 @@ configuration file:
 ```yaml
 __default__:
   constraint: mem500MB
-  
+
 large_memory_requirement_job:
   constraint: mem2000MB
 ```

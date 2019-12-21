@@ -1,3 +1,14 @@
+# NOTE:
+
+I chose not to use any job submit scripts, as it tended to result in errors often in cluster. Ideally, I wanted this profile to inherently handle `--cluster` option (whose value gets quite long) and to just use `--cluster-config`.
+
+- Script `slurm-submit.py` seemed to work fine, but it can not process `--cluster-config` option.
+- `--cluster-config` option can only be used with `slurm-submit-advanced.py`, but it resulted in several difficulties (e.g., requiring `time` strictly in minutes, not processing `ntasks` properly as supplied, etc.).
+
+So I prefer to just not use submit scripts and instead just `--cluster` along with `--cluster-config` option. Using this profile is still attractive, as it takes care of `--cluster-status` and sets up certain snakemake config defaults.
+
+
+
 [![CircleCI](https://circleci.com/gh/percyfal/slurm.svg?style=svg)](https://circleci.com/gh/percyfal/slurm)
 
 # slurm

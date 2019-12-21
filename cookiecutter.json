@@ -1,8 +1,4 @@
 {
-    "account": "",
     "profile_name": "slurm",
-    "submit_script": ["slurm-submit-advanced.py", "slurm-submit.py"],
-    "output": "logs/snakemake.log",
-    "error": "",
-    "partition": ""
+    "account": ""
 }
